@@ -1,0 +1,177 @@
+/* 
+==============================================
+CONTENT:	Hansel & Gretel E-book
+AUTHOR:		Cassandra Desrosiers & Danny McMillan
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	background: #ccc;
+}
+
+.test {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+}
+
+section {
+	position: relative;
+}
+
+.part1 {
+	background: purple;
+	height: 100vh;
+}
+
+.part1 p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.part1 .house {
+	width: 400px;
+	height: 300px;
+	background-color: brown;
+	position: absolute;
+	margin: 0px;
+	top: 30%;
+}
+
+.part1 .house .house p {
+	color: white;
+	text-align: center;
+}
+
+.part1 .trees {
+	background-color: green;
+}
+
+.part1 .sun {
+	background-color: yellow;
+	position: absolute;
+	left: 75%;
+	top: 14%;
+	margin: 0px;
+	border-radius: 50px;
+}
+
+.part1 .sun .sun_ray1 {
+	background-color: yellow;
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	left: 80%;
+	top: 20%;
+	transform: rotate(-10deg);
+}
+
+.part1 .sun .sun_ray2 {
+	background-color: yellow;
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	left: 80%;
+	top: 10%;
+	transform: rotate(-10deg);
+}
+
+.part1 .path {
+	background-color: gray;
+}
+
+.part1 .hansel {
+	background-color: blue;
+}
+
+.part1 .gretel {
+	background-color: red;
+}
+
+.part2 {
+	background-color: orange;
+	height: 100vh;
+}
+
+#test-text {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+
+#test-text.show {
+	transform: translateX(-50%);
+}
+
+/* 2. Content ================================= */
+
+/*# sourceMappingURL=main.css.map */
